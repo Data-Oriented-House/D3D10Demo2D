@@ -82,7 +82,7 @@ if mouse.relative_pos != 0 {
 // There are also a couple of useful procedures that you may commonly want (completely thread-safe)
 // In the graphics thread you have to use `frame.size`, but for code in other threads (e.g. simulation) you can get it like this
 framebuffer_size := app.get_framebuffer_size()
-// And if you process inputs not on the graphics thread, then you can get mouse position on the graphics thread like this
+// And if you process inputs not on the simulation thread, then you can get mouse position on the graphics thread like this
 mouse_pos := app.get_mouse_pos()
 ```
 
